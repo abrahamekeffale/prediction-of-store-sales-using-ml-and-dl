@@ -4,3 +4,7 @@ scipy
 seaborn
 matplotlib
 scikit-learn
+pickle
+matplotlib.pyplot 
+tensorflow
+keras
