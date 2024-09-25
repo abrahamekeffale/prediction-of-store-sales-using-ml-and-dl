@@ -1,0 +1,24 @@
+{
+    "python.pythonPath": "path/to/python",  // Specify the path to your Python interpreter
+    "python.linting.enabled": true,         // Enable linting
+    "python.linting.pylintEnabled": true,   // Enable pylint for linting
+    "python.formatting.provider": "black",  // Use 'black' as the formatter
+    "python.linting.pylintArgs": [
+        "--disable=C0111"  // Disable missing docstring warnings
+    ],
+    "editor.formatOnSave": true,            // Format code on save
+    "editor.tabSize": 4,                    // Set tab size to 4 spaces
+    "editor.insertSpaces": true,            // Use spaces instead of tabs
+    "files.autoSave": "afterDelay",         // Autosave after a delay
+    "python.testing.unittestEnabled": true, // Enable unit testing with unittest
+    "python.testing.pytestEnabled": false,  // Disable pytest if not using it
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./tests"  // Specify the folder for your unit tests
+    ],
+    "python.envFile": "${workspaceFolder}/.env",  // Path to environment variables
+    "terminal.integrated.env.windows": {
+        "PYTHONPATH": "${workspaceFolder}/src"   // Add 'src' folder to Python path
+    }
+}

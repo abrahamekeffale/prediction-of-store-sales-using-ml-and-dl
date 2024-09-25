@@ -37,7 +37,7 @@ predicted_sales = scaler.inverse_transform(predicted_sales_scaled)
 
 print(f"Predicted Sales for the next day: {predicted_sales[0][0]}")
 
-# Plot the actual vs predicted sales for visualization (optional)
+# Plot the actual vs predicted sales for visualization 
 plt.figure(figsize=(10, 6))
 plt.plot(sales_data[-window_size:], label='Actual Sales (Last 60 Days)', color='blue')
 plt.axhline(y=predicted_sales[0][0], color='red', linestyle='--', label='Predicted Sales (Next Day)')
